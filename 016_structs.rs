@@ -1,5 +1,10 @@
 // there are 3 types of structs.
 
+// the following line tells the compiler to implement 'Debug' trait
+// for this struct.
+// you will find out what a 'trait' is later but for now just know
+// that with this line we can print instances of this struct.
+
 #[derive(Debug)]
 struct EmptyStruct; // 'unit-like' struct or 'unit'
 
@@ -18,7 +23,7 @@ fn main() {
   let es: EmptyStruct = EmptyStruct;
 
   println!("Initial values:");
-  println!("{:?}", ts);
+  println!("{:?}", ts); // when a struct is 'Debug' you can print it like this.
   println!("{:?}", os);
   println!("{:?}", es);
   println!("");
